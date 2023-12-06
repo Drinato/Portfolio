@@ -46,7 +46,11 @@ The structure of Concurrent server process:
   $gcc -o chatserver chatserver.c`
 
     2. Enable the server to select port 734 and open the server to put it in a listening state
-
+<p align="center"><img src="image/Simple Chat Software_image1.jpg" width="650px"/>
     3. The client first establishes a connection with the server, and the server creates sub processes representing a client in the chat room. The customer         enters their name and chats in the chat room using this ID
+<p align="center"><img src="image/Simple Chat Software_image2.jpg" width="650px"/>
+#### 🐟 Data and results analysis
+Chat rooms can enable multiple people to log in(During testing, the service displayed the same login IP as the three IP addresses because they were logged in from the same IP address）
+<p align="center"><img src="image/Simple Chat Software_image3.jpg" width="650px"/>
 
 
