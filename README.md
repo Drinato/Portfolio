@@ -45,4 +45,8 @@ The structure of Concurrent server process:
     $gcc -o chatclient chatclient.c  
     $gcc -o chatserver chatserver.c
 
+    2. Enable the server to select port 734 and open the server to put it in a listening state
+
+    3. The client first establishes a connection with the server, and the server creates sub processes representing a client in the chat room. The customer         enters their name and chats in the chat room using this ID
+
 
