@@ -42,8 +42,8 @@ The structure of Concurrent server process:
 
 #### ⚔️ Project Implementation Steps and Operations
     1. Compile program
- `$gcc -o chatclient chatclient.c`
-`$gcc -o chatserver chatserver.c`
+ `$gcc -o chatclient chatclient.c
+  $gcc -o chatserver chatserver.c`
 
     2. Enable the server to select port 734 and open the server to put it in a listening state
 
