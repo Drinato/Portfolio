@@ -28,17 +28,20 @@ The experimental results show that bilateral filters can effectively preserve im
 #### 😎 Experimental Principles
 Concurrent connection server oriented algorithms
 Connection oriented servers achieve concurrency between multiple connections (not between requests).The main algorithms of the program are as follows:
+
     1. master thread：Create a socket and bind it to a well-known port of the provided service, keeping the socket connection oriented.
     2. master thread: Set the port to passive mode.
     3. master thread: Repeatedly calling accept to receive the next connection request from the client and creating a new slave thread or process to handle the response.
     4. slave thread: The connection request passed by the master thread begins.
     5. slave thread: Use this connection to interact with customers; Read request and send back response.
     6. slave thread: Close connection and exit.
+    
 The structure of Concurrent server process:
     1. The server includes a master process and zero or more slave processes. One thread per process.
     2. The main server uses accept to block calls, saving CPU resources. When a connection arrives, accept returns immediately.
 
 #### ⚔️ Project Implementation Steps and Operations
-    1. Compile program    `$gcc -o chatclient chatclient.c  $gcc -o chatserver chatserver.c`
+    1. Compile program
+    `$gcc -o chatclient chatclient.c  $gcc -o chatserver chatserver.c`
 
 
