@@ -41,16 +41,23 @@ The structure of Concurrent server process:
     2. The main server uses accept to block calls, saving CPU resources. When a connection arrives, accept returns immediately.
 
 #### ⚔️ Project Implementation Steps and Operations
-    1. Compile program
+  Compile program
  `$gcc -o chatclient chatclient.c
   $gcc -o chatserver chatserver.c`
 
-    2. Enable the server to select port 734 and open the server to put it in a listening state
+  Enable the server to select port 734 and open the server to put it in a listening state
 <p align="center"><img src="image/Simple Chat Software_image1.jpg" width="650px"/>
-    3. The client first establishes a connection with the server, and the server creates sub processes representing a client in the chat room. The customer         enters their name and chats in the chat room using this ID
+ The client first establishes a connection with the server, and the server creates sub processes representing a client in the chat room. The customer         enters their name and chats in the chat room using this ID
 <p align="center"><img src="image/Simple Chat Software_image2.jpg" width="650px"/>
+  
 #### 🐟 Data and results analysis
 Chat rooms can enable multiple people to log in(During testing, the service displayed the same login IP as the three IP addresses because they were logged in from the same IP address）
 <p align="center"><img src="image/Simple Chat Software_image3.jpg" width="650px"/>
+
+There is a shared storage space between the client and server, which enables the content sent by users to the server to be displayed on all clients
+<p align="center"><img src="image/Simple Chat Software_image4.jpg" width="650px"/>
+
+For example, here **usr1** sends a "hello_ World", all clients display the source and time of message sending.The server also displays the source of the message.If a message is sent with multiple letters, the spacing between spaces indicates multiple strings, which will be sent multiple times. If multiple words need to be sent, they cannot be separated by spaces and can be separated by underscores.
+<p align="center"><img src="image/Simple Chat Software_image5.jpg" width="650px"/>
 
 
