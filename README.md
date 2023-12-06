@@ -42,8 +42,7 @@ The structure of Concurrent server process:
 
 #### ⚔️ Project Implementation Steps and Operations
     1. Compile program
-    
-    `$gcc -o chatclient chatclient.c  
-     $gcc -o chatserver chatserver.c`
+    $gcc -o chatclient chatclient.c  
+    $gcc -o chatserver chatserver.c
 
 
