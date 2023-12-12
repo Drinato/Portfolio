@@ -60,4 +60,18 @@ There is a shared storage space between the client and server, which enables the
 For example, here **usr1** sends a "hello_ World", all clients display the source and time of message sending.The server also displays the source of the message.If a message is sent with multiple letters, the spacing between spaces indicates multiple strings, which will be sent multiple times. If multiple words need to be sent, they cannot be separated by spaces and can be separated by underscores.
 <p align="center"><img src="image/Simple Chat Software_image5.jpg" width="650px"/>
 
+### ⭐ Implementation of Image Retrieval System and MNIST Handwritten Digit Recognition
+####  Implementation of Image Retrieval System
+Implementing content-based image retrieval: Content based image retrieval technology retrieves images based on their own content features, eliminating the process of manually annotating images. Using a certain algorithm to extract features from images and storing them to form an image feature database. Extract the features of the image to be retrieved during retrieval, calculate the correlation between the image in the feature database and the image to be retrieved based on certain similarity criteria, and sort them in descending order to obtain the image that is most relevant to the image to be retrieved.
+
+##### 🚢 Experimental content
+1. SIFT Extracting Image Features
+ <p align="center"><img src="image/Implementation of Image Retrieval System_image1.jpg" width="650px"/>
+2. Learning a visual dictionary
+3. Use a visual dictionary to quantify the features of each image, and the center points of each cluster become the key values of the visual dictionary. Each image is represented by its frequency of similarity with these center points. The k-dimensional histogram shown in the following figure.
+
+#####  🎉 Experimental results and analysis
+Raw parameters and data obtained from algorithms
+Raw data (k=10, subsampling=1)
+<p align="center"><img src="image/Implementation of Image Retrieval System_image2.jpg" width="650px"/>
 
