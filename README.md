@@ -93,8 +93,12 @@ In this experiment, the following four parameters were changed to explore their 
 ** Using different optimization algorithms
 ** Different learning rates (learning_rate)
 1. Data of control group
+   
 <p align="center"><img src="image/MNIST_image1.jpg" width="650px"/>
+  
 2. When taking different iterations(epoch)
+   
 <p align="center"><img src="image/MNIST_image2.jpg" width="650px"/>
+  
 The above figure is a line graph when the total number of epochs is 10 and 5. When epoch=10, the function clearly enters a plateau, while when epoch=5, the function does not enter a plateau and is still in an upward phase, indicating that the number of epochs entering the plateau is between 5 and 10, which is consistent with the visual observation of 7-8 epochs mentioned earlier. The optimal epoch should be greater than 10
 3. Using different batch training sizes (batch_size)
