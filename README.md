@@ -70,8 +70,31 @@ Implementing content-based image retrieval: Content based image retrieval techno
 2. Learning a visual dictionary
 3. Use a visual dictionary to quantify the features of each image, and the center points of each cluster become the key values of the visual dictionary. Each image is represented by its frequency of similarity with these center points. The k-dimensional histogram shown in the following figure.
 
-#####  🎉 Experimental results and analysis
+##### 🎉 Experimental results and analysis
 Raw parameters and data obtained from algorithms
 Raw data (k=10, subsampling=1)
 <p align="center"><img src="image/Implementation of Image Retrieval System_image2.jpg" width="650px"/>
+Here are some of experimental data
+<p align="center"><img src="image/Implementation of Image Retrieval System_image3.jpg" width="650px"/>
+  
+##### 😎 summary analysis
+By adjusting the number of class centers and the number of clustering iterations, the above results were obtained. It is not difficult to summarize that as the number of class centers increases, the accuracy slightly increases, but the precision is not much, which is about 0.05~0.10. The training time increases, while the subsampling increases, the training time decreases, and the limit of reduction is about 2 minutes and 10 seconds (in the case of a class center of 10).
+Overall, the Precision is too low and adjusting the parameters cannot significantly increase it, which may be an algorithm problem. Improving the Precision can be achieved by changing the algorithm.
 
+#### ⭐ MNIST Handwritten Digit Recognition
+##### 🥳 Experimental content
+Digital Recognition is the ability of a computer to receive, understand, and recognize readable numbers from paper documents, photos, or other sources. The main issue that is currently receiving attention is handwritten digit recognition, which is simplified.Single digit 0-9 recognition has been recognized as an entry-level problem in the field of computer vision.The MNIST dataset contains 60000 training set images and 10000 test set images. Each sheet in the dataset.The size of the image is fixed (28x28 pixels), and the numbers on it have been standardized and centered.The word range is from 0 to 9, with a total of 10 modes.
+This experiment adopts a convolutional neural network model and uses gradient descent optimization algorithms such as Adam to minimize the loss function.
+
+##### 🦈 Experimental results and analysis
+In this experiment, the following four parameters were changed to explore their impact on the experiment, in order to select the optimal model.
+** Using different batch sizes for training (batch_size)
+** Different number of iterations (epoch)
+** Using different optimization algorithms
+** Different learning rates (learning_rate)
+1. Data of control group
+<p align="center"><img src="image/MNIST_image1.jpg" width="650px"/>
+2. When taking different iterations(epoch)
+<p align="center"><img src="image/MNIST_image2.jpg" width="650px"/>
+The above figure is a line graph when the total number of epochs is 10 and 5. When epoch=10, the function clearly enters a plateau, while when epoch=5, the function does not enter a plateau and is still in an upward phase, indicating that the number of epochs entering the plateau is between 5 and 10, which is consistent with the visual observation of 7-8 epochs mentioned earlier. The optimal epoch should be greater than 10
+3. Using different batch training sizes (batch_size)
