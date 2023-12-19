@@ -102,3 +102,18 @@ In this experiment, the following four parameters were changed to explore their 
   
 The above figure is a line graph when the total number of epochs is 10 and 5. When epoch=10, the function clearly enters a plateau, while when epoch=5, the function does not enter a plateau and is still in an upward phase, indicating that the number of epochs entering the plateau is between 5 and 10, which is consistent with the visual observation of 7-8 epochs mentioned earlier. The optimal epoch should be greater than 10
 3. Using different batch training sizes (batch_size)
+
+<p align="center"><img src="image/MNIST_image3.jpg" width="650px"/>
+We chose batch_size
+4. Different learning rates (learning_rate, hereinafter referred to as lr)
+
+<p align="center"><img src="image/MNIST_image4.jpg" width="650px"/>
+  
+The initial accuracy increases with the increase of learning rate, and the higher the learning rate, the faster it enters the stationary period (when lr=0.001, it takes about 6-8 rounds, while lr=0.01 is within 5 rounds). When entering the stationary period, the average accuracy decreases with the increase of lr, and as lr increases, the amplitude of fluctuations becomes larger. It is worth mentioning that when lr>0.1, accuracy will sharply decrease, with an average accuracy of around 0.11. Considering all factors, lr=0.001 is optimal.
+5. Different optimizers
+The control group used the Adam optimizer in this experiment. Two optimizers, Adagard and SGD, were compared with the Adam optimizer. Due to space limitations, this article will not explain each optimizer.
+
+<p align="center"><img src="image/MNIST_image5.jpg" width="650px"/>
+
+##### 😎 Summarize
+This experiment selected four parameters, namely batch size, iteration number, optimization algorithm, and learning rate, to explore the optimal model and parameters under different conditions. The experiment achieved good results. Through this experiment, we have further learned deep learning models such as convolutional neural networks and optimization algorithms such as stochastic gradient descent, deepening our understanding of deep learning.
