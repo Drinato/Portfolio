@@ -117,3 +117,6 @@ The control group used the Adam optimizer in this experiment. Two optimizers, Ad
 
 ##### 😎 Summarize
 This experiment selected four parameters, namely batch size, iteration number, optimization algorithm, and learning rate, to explore the optimal model and parameters under different conditions. The experiment achieved good results. Through this experiment, we have further learned deep learning models such as convolutional neural networks and optimization algorithms such as stochastic gradient descent, deepening our understanding of deep learning.
+
+
+https://github.com/Drinato/Portfolio/assets/151999825/c1fb7af5-2035-4ff5-9f86-0ef266d59f09
