@@ -18,7 +18,7 @@ Compared to Gaussian filtering, bilateral filtering adds weights to grayscale in
   
 Point p is the center of the mask (circled in yellow), and point q is a point in the neighborhood (circled in white). Two kernel functions are generated, one in the spatial domain and the other in the value domain, which are then multiplied to obtain the final kernel function. The input is convolved or correlated to obtain the output. From the graph, it can be seen that the edges are well preserved and noise is also suppressed.
 
-#### 🚀Experimental results and conclusions
+#### 🚀 Experimental results and conclusions
 
 <p align="center"><img src="image/bilateral filtering_image2.jpg" width="650px"/>
 
@@ -118,5 +118,25 @@ The control group used the Adam optimizer in this experiment. Two optimizers, Ad
 ##### 😎 Summarize
 This experiment selected four parameters, namely batch size, iteration number, optimization algorithm, and learning rate, to explore the optimal model and parameters under different conditions. The experiment achieved good results. Through this experiment, we have further learned deep learning models such as convolutional neural networks and optimization algorithms such as stochastic gradient descent, deepening our understanding of deep learning.
 
+### ⭐ Butterfly fly
+#### 🦈 Game Introduction
+This game features the INFP personality from MBTI as the protagonist, and because the official portrait features a butterfly, everyone calls her Little Butterfly. Little Butterfly is a person who frequently experiences setbacks in real life, but she has infinite imagination. In her fantasy world, she imagines the difficulties and bad people she encounters in life as obstacles and monsters. She overcomes and overcomes them in her own world, making herself mentally stronger to cope with real-life difficulties, achieve self transformation, and break free from cocoons to become a butterfly. In this game, the protagonist runs parkour in different levels, avoids obstacles, keeps moving forward, and gains more coins and points to exchange for growth resources, unlock new levels, become stronger, and ultimately become the ideal self.
+#### ⚔️ Game Settings
+##### Game Scene Settings
+The concept of the game scene is to depict the protagonist in a quiet and mysterious forest, constantly advancing in adventure, through elements such as background, game characters, ground, and interactive interface. In the deep blue jungle, faint stars and mist can be seen, appearing fantastical and mysterious. The characters and road surface in the center of the scene are the main parts of the game scene. The red monsters in the game create a strong contrast with the main color of the scene, enhancing the sense of danger in the game scene and providing players with a more exciting gaming experience. The game characters use light color combinations, which are more lively compared to the dark background of the jungle, while also showing a feeling of fast running. The gold coin pattern and pixel heart used in the interface display the number of coins and health points that players have obtained, making it easier for players to better understand their game achievements and health situation during the game experience.
+In the game UI interface design, the butterfly element symbolizing the infp protagonist was selected, and a dark gray and transparent box was used in the pause interface, which conforms to the main tone of the game. When paused, the entire interface can be seen without causing a sense of discontinuity when players return to the game, improving the interaction experience between players and the game.
 
+##### Store System Settings
+Players can accumulate coins in the game and exchange them for other game resources after reaching a certain amount, such as unlocking new levels and maps, unlocking new characters, upgrading character attributes, purchasing items to gain bonuses, etc.
+
+##### Other Settings
+The monsters in the game symbolize various difficulties in life. In parkour levels, monsters can be divided into two types: larger monsters do not attack characters, but act as obstacles to their movements, hindering the protagonist from running forward; Smaller monsters can attack the protagonist, and if the protagonist does not dodge, their health will be deducted; The protagonist can also attack monsters by touching them with a staff, causing them to disappear.
+The protagonist in the game is an adventurer who has just entered the jungle. The protagonist can attack monsters by touching them with a wand or choose to dodge. The protagonist obtains coins in parkour, exchanges them for new game resources, constantly grows stronger, and embarks on new adventures.
+#### 🚀 Game Core
+•	In a game, the character has a total of 3 HP points. If they touch a monster or fall below the boundary line, HP will be deducted. If the 3 HP points are exhausted, the game ends；
+•	Players can control their characters to jump through the space bar, and by pressing the button twice in a row, they can jump in two segments；
+•	Players can eliminate monsters by touching them with their wands；
+•	Players can collect coins and continuously jump forward to obtain higher scores, which can be used to exchange for other game resources for character development.
+
+#### Game Demo
 https://github.com/Drinato/Portfolio/assets/151999825/c1fb7af5-2035-4ff5-9f86-0ef266d59f09
