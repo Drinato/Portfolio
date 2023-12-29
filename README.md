@@ -144,3 +144,22 @@ https://github.com/Drinato/Portfolio/assets/151999825/c1fb7af5-2035-4ff5-9f86-0e
 ## Internship Program
 This project is a digital twin city project developed based on the UE5 game engine, which restores Wenzhou Experimental High School to the project through 1:1 modeling of engineering drawings. In addition to the most basic roaming function, this digital twin project has functions such as emergency distress handling, resource management, parking management, elevator control, lighting control, and pipeline network control, providing a metaverse like platform for school managers, Below, a series of demos will showcase some of the functionalities implemented by the project.
 
+#### Roaming function
+Users can freely explore the scene as pedestrians or drones through the roaming function, and the time is also connected to real time. At the same time, users can adjust it themselves
+https://github.com/Drinato/Portfolio/assets/151999825/a4a0036e-421c-4a17-9323-56a933cb0f28
+
+#### Space management
+The space management function allows users to individually pull out a certain floor of a single building to view the situation of that floor
+https://github.com/Drinato/Portfolio/assets/151999825/7d0c975d-111d-4f1e-93f9-0f65a0be150f
+
+#### Parking management
+Parking space management has a guidance function, where users can input the desired parking space and the camera will automatically locate it
+https://github.com/Drinato/Portfolio/assets/151999825/2fdfd0ed-2a6a-49dc-a684-1fa78f4e6058
+
+#### Energy management
+Resource management allows users to view the usage of water, electricity, and other energy sources on each floor of each building, and to label them in different colors based on the amount of energy used, graded, and graded.
+https://github.com/Drinato/Portfolio/assets/151999825/983d30f5-d13f-47a2-a6fa-84ac50111bd2
+
+#### Emergency plan
+https://github.com/Drinato/Portfolio/assets/151999825/037dddec-6e14-46a7-a9a1-81d00ad6d968
+Showcased the emergency response plan of the school in the face of emergency events (such as fire disasters).
