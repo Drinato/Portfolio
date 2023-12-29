@@ -140,3 +140,7 @@ The protagonist in the game is an adventurer who has just entered the jungle. Th
 
 #### Game Demo
 https://github.com/Drinato/Portfolio/assets/151999825/c1fb7af5-2035-4ff5-9f86-0ef266d59f09
+
+## Internship Program
+This project is a digital twin city project developed based on the UE5 game engine, which restores Wenzhou Experimental High School to the project through 1:1 modeling of engineering drawings. In addition to the most basic roaming function, this digital twin project has functions such as emergency distress handling, resource management, parking management, elevator control, lighting control, and pipeline network control, providing a metaverse like platform for school managers, Below, a series of demos will showcase some of the functionalities implemented by the project.
+
