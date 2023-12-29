@@ -165,5 +165,7 @@ Resource management allows users to view the usage of water, electricity, and ot
 https://github.com/Drinato/Portfolio/assets/151999825/983d30f5-d13f-47a2-a6fa-84ac50111bd2
 
 #### Emergency plan
-https://github.com/Drinato/Portfolio/assets/151999825/037dddec-6e14-46a7-a9a1-81d00ad6d968
 Showcased the emergency response plan of the school in the face of emergency events (such as fire disasters).
+
+https://github.com/Drinato/Portfolio/assets/151999825/037dddec-6e14-46a7-a9a1-81d00ad6d968
+
