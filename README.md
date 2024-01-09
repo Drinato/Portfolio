@@ -20,7 +20,7 @@ Point p is the center of the mask (circled in yellow), and point q is a point in
 
 #### 🚀 Experimental results and conclusions
 
-<p align="center"><img src="image/bilateral filtering_image2.jpg" width="650px"/>
+<p align="center"><img src="image/image/bilateral filtering_image2.jpg" width="650px"/>
 
 The experimental results show that bilateral filters can effectively preserve image edge details while filtering out low-frequency noise components. For simple filtering, two sigma values can be set to the same value. If the value is less than 10, the impact on the filter is minimal. If the value is greater than 100, it will have a significant impact on the filter, making the image appear cartoonish.
 
@@ -46,19 +46,19 @@ The structure of Concurrent server process:
   $gcc -o chatserver chatserver.c`
 
   Enable the server to select port 734 and open the server to put it in a listening state
-<p align="center"><img src="image/Simple Chat Software_image1.jpg" width="650px"/>
+<p align="center"><img src="image/image/Simple Chat Software_image1.jpg" width="650px"/>
  The client first establishes a connection with the server, and the server creates sub processes representing a client in the chat room. The customer         enters their name and chats in the chat room using this ID
-<p align="center"><img src="image/Simple Chat Software_image2.jpg" width="650px"/>
+<p align="center"><img src="image/image/Simple Chat Software_image2.jpg" width="650px"/>
   
 #### 🐟 Data and results analysis
 Chat rooms can enable multiple people to log in(During testing, the service displayed the same login IP as the three IP addresses because they were logged in from the same IP address）
-<p align="center"><img src="image/Simple Chat Software_image3.jpg" width="650px"/>
+<p align="center"><img src="image/image/Simple Chat Software_image3.jpg" width="650px"/>
 
 There is a shared storage space between the client and server, which enables the content sent by users to the server to be displayed on all clients
-<p align="center"><img src="image/Simple Chat Software_image4.jpg" width="650px"/>
+<p align="center"><img src="image/image/Simple Chat Software_image4.jpg" width="650px"/>
 
 For example, here **usr1** sends a "hello_ World", all clients display the source and time of message sending.The server also displays the source of the message.If a message is sent with multiple letters, the spacing between spaces indicates multiple strings, which will be sent multiple times. If multiple words need to be sent, they cannot be separated by spaces and can be separated by underscores.
-<p align="center"><img src="image/Simple Chat Software_image5.jpg" width="650px"/>
+<p align="center"><img src="image/image/Simple Chat Software_image5.jpg" width="650px"/>
 
 ### ⭐ Implementation of Image Retrieval System and MNIST Handwritten Digit Recognition
 ####  Implementation of Image Retrieval System
@@ -66,16 +66,16 @@ Implementing content-based image retrieval: Content based image retrieval techno
 
 ##### 🚢 Experimental content
 1. SIFT Extracting Image Features
- <p align="center"><img src="image/Implementation of Image Retrieval System_image1.jpg" width="650px"/>
+ <p align="center"><img src="image/image/Implementation of Image Retrieval System_image1.jpg" width="650px"/>
 2. Learning a visual dictionary
 3. Use a visual dictionary to quantify the features of each image, and the center points of each cluster become the key values of the visual dictionary. Each image is represented by its frequency of similarity with these center points. The k-dimensional histogram shown in the following figure.
 
 ##### 🎉 Experimental results and analysis
 Raw parameters and data obtained from algorithms
 Raw data (k=10, subsampling=1)
-<p align="center"><img src="image/Implementation of Image Retrieval System_image2.jpg" width="650px"/>
+<p align="center"><img src="image/image/Implementation of Image Retrieval System_image2.jpg" width="650px"/>
 Here are some of experimental data
-<p align="center"><img src="image/Implementation of Image Retrieval System_image3.jpg" width="650px"/>
+<p align="center"><img src="image/image/Implementation of Image Retrieval System_image3.jpg" width="650px"/>
   
 ##### 😎 summary analysis
 By adjusting the number of class centers and the number of clustering iterations, the above results were obtained. It is not difficult to summarize that as the number of class centers increases, the accuracy slightly increases, but the precision is not much, which is about 0.05~0.10. The training time increases, while the subsampling increases, the training time decreases, and the limit of reduction is about 2 minutes and 10 seconds (in the case of a class center of 10).
@@ -94,26 +94,26 @@ In this experiment, the following four parameters were changed to explore their 
 ** Different learning rates (learning_rate)
 1. Data of control group
    
-<p align="center"><img src="image/MNIST_image1.jpg" width="650px"/>
+<p align="center"><img src="image/image/MNIST_image1.jpg" width="650px"/>
   
 2. When taking different iterations(epoch)
    
-<p align="center"><img src="image/MNIST_image2.jpg" width="650px"/>
+<p align="center"><img src="image/image/MNIST_image2.jpg" width="650px"/>
   
 The above figure is a line graph when the total number of epochs is 10 and 5. When epoch=10, the function clearly enters a plateau, while when epoch=5, the function does not enter a plateau and is still in an upward phase, indicating that the number of epochs entering the plateau is between 5 and 10, which is consistent with the visual observation of 7-8 epochs mentioned earlier. The optimal epoch should be greater than 10
 3. Using different batch training sizes (batch_size)
 
-<p align="center"><img src="image/MNIST_image3.jpg" width="650px"/>
+<p align="center"><img src="image/image/MNIST_image3.jpg" width="650px"/>
 We chose batch_size
 4. Different learning rates (learning_rate, hereinafter referred to as lr)
 
-<p align="center"><img src="image/MNIST_image4.jpg" width="650px"/>
+<p align="center"><img src="image/image/MNIST_image4.jpg" width="650px"/>
   
 The initial accuracy increases with the increase of learning rate, and the higher the learning rate, the faster it enters the stationary period (when lr=0.001, it takes about 6-8 rounds, while lr=0.01 is within 5 rounds). When entering the stationary period, the average accuracy decreases with the increase of lr, and as lr increases, the amplitude of fluctuations becomes larger. It is worth mentioning that when lr>0.1, accuracy will sharply decrease, with an average accuracy of around 0.11. Considering all factors, lr=0.001 is optimal.
 5. Different optimizers
 The control group used the Adam optimizer in this experiment. Two optimizers, Adagard and SGD, were compared with the Adam optimizer. Due to space limitations, this article will not explain each optimizer.
 
-<p align="center"><img src="image/MNIST_image5.jpg" width="650px"/>
+<p align="center"><img src="image/image/MNIST_image5.jpg" width="650px"/>
 
 ##### 😎 Summarize
 This experiment selected four parameters, namely batch size, iteration number, optimization algorithm, and learning rate, to explore the optimal model and parameters under different conditions. The experiment achieved good results. Through this experiment, we have further learned deep learning models such as convolutional neural networks and optimization algorithms such as stochastic gradient descent, deepening our understanding of deep learning.
